@@ -15,6 +15,7 @@ module.exports.bot = bot;
 
 // template plugins
 require("./plugin/hello"); //hello world
+require("./plugin/echo");
 
 process.on("unhandledRejection", (reason, promise) => {
 	console.log("Unhandled Rejection at:", promise, "reason:", reason);
